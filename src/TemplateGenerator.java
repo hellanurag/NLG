@@ -104,7 +104,7 @@ public class TemplateGenerator {
         }
         else if((custList.get(ci).getPercUtil() >= 50.0) && (custList.get(ci).getPercUtil() <= 70.0))
         {
-        	utilavg = "This utilization rate about the same as the industry average. ";	
+        	utilavg = "This utilization rate is about the same as the industry average. ";	
         }
         else
         {
