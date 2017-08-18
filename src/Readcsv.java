@@ -36,7 +36,7 @@ public class Readcsv {
 				if (index == 0)
 					cust.setUniqueid(Integer.parseInt(data));
 				else if (index == 1)
-					cust.setCutomerid(Integer.parseInt(data));
+					cust.setCustomerid(Integer.parseInt(data));
 				else if (index == 2)
 					cust.setCustomername(data);
 				else if (index == 3)
@@ -63,7 +63,14 @@ public class Readcsv {
 		//close reader
 		reader.close();
 		
+		/*
+		public List<customer> getCustomerList(){
+			return custList;
+		}
+		*/
+		
 		//System.out.println(custList.get(0).getUniqueid());
+		//System.out.println(custList.get(0).getPercUtil());
 		
 	}
 

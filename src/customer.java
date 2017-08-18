@@ -3,7 +3,7 @@ public class customer {
 
 	//customer fields
 	private int 	uniqueid;
-	private int		cutomerid;
+	private int		customerid;
 	private String	customername;
 	private String	customerrep;
 	private int		productid;
@@ -19,11 +19,11 @@ public class customer {
 	public void setUniqueid(int uniqueid) {
 		this.uniqueid = uniqueid;
 	}
-	public int getCutomerid() {
-		return cutomerid;
+	public int getCustomerid() {
+		return customerid;
 	}
-	public void setCutomerid(int cutomerid) {
-		this.cutomerid = cutomerid;
+	public void setCustomerid(int cutomerid) {
+		this.customerid = cutomerid;
 	}
 	public String getCustomername() {
 		return customername;
@@ -68,6 +68,8 @@ public class customer {
 		this.weeksfrompurchase = weeksfrompurchase;
 	}
 	
-	
+	public double getPercUtil() {
+		return ((double)activeusers/(double)totallicenses)*100;
+	}
 	
 }
