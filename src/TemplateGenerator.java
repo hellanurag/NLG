@@ -128,15 +128,15 @@ public class TemplateGenerator {
         String reco = null;
         if(custList.get(ci).getProductid() == 1)
         {
-        	reco = "Product B also seems to be good fit for" + custList.get(ci).getCustomername() + ". Would you like to schedule a call to know more about it? \n";
+        	reco = "Product B also seems to be good fit for " + custList.get(ci).getCustomername() + ". Would you like to schedule a call to know more about it? \n";
         }
         else if(custList.get(ci).getProductid() == 2)
         {
-        	reco = "Product C also seems to be good fit for" + custList.get(ci).getCustomername() + ". Would you like to schedule a call to know more about it? \n";	
+        	reco = "Product C also seems to be good fit for " + custList.get(ci).getCustomername() + ". Would you like to schedule a call to know more about it? \n";	
         }
         else if(custList.get(ci).getProductid() == 3)
         {
-        	reco = "Product A also seems to be good fit for" + custList.get(ci).getCustomername() + ". Would you like to schedule a call to know more about it? \n";	
+        	reco = "Product A also seems to be good fit for " + custList.get(ci).getCustomername() + ". Would you like to schedule a call to know more about it? \n";	
         }
         
         String regards = "\nRegards, \n" + "Your vendor.";
