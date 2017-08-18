@@ -102,7 +102,7 @@ public class TemplateGenerator {
         {
         utilavg = "This utilization rate is more than the industry average. ";
         }
-        else if((custList.get(ci).getPercUtil() >= 50.0) && (custList.get(ci).getPercUtil() <= 70.0))
+        else if((custList.get(ci).getPercUtil() >= 50.0) && (custList.get(ci).getPercUtil() < 70.0))
         {
         	utilavg = "This utilization rate is about the same as the industry average. ";	
         }
@@ -112,11 +112,11 @@ public class TemplateGenerator {
         }
         
         String percusage;
-        if(custList.get(ci).getPercUtil() >= 85.0)
+        if(custList.get(ci).getPercUtil() >= 80.0)
         {
         	percusage = "We have seen a surge based on the weekly active user base number. Would you like to obtain more licenses? \n\n";
         }
-        else if(custList.get(ci).getPercUtil() <= 45.0)
+        else if(custList.get(ci).getPercUtil() <= 60.0)
         {
         	percusage = "We have seen a decline based on the weekly active user base number.Would you like to schedule an interview to improve the product usage? \n\n";	
         }
@@ -128,18 +128,18 @@ public class TemplateGenerator {
         String reco = null;
         if(custList.get(ci).getProductid() == 1)
         {
-        	reco = "Product B also seems to be good fit for " + custList.get(ci).getCustomername() + ". Would you like to schedule a call to know more about it? \n";
+        	reco = "Product B also seems to be good fit for " + custList.get(ci).getCustomername() + ". We would be happy to walk you through a quick demo. Let us know if you are interested in setting up a call. \n";
         }
         else if(custList.get(ci).getProductid() == 2)
         {
-        	reco = "Product C also seems to be good fit for " + custList.get(ci).getCustomername() + ". Would you like to schedule a call to know more about it? \n";	
+        	reco = "Product C also seems to be good fit for " + custList.get(ci).getCustomername() + ". We would be happy to walk you through a quick demo. Let us know if you are interested in setting up a call. \n";	
         }
         else if(custList.get(ci).getProductid() == 3)
         {
-        	reco = "Product A also seems to be good fit for " + custList.get(ci).getCustomername() + ". Would you like to schedule a call to know more about it? \n";	
+        	reco = "Product A also seems to be good fit for " + custList.get(ci).getCustomername() + ". We would be happy to walk you through a quick demo. Let us know if you are interested in setting up a call. \n";	
         }
         
-        String regards = "\nRegards, \n" + "Your vendor.";
+        String regards = "\nRegards, \n" + "Your service provider.";
         
         DocumentElement s1 = nlgFactory.createSentence(p1);
         DocumentElement s2 = nlgFactory.createSentence(p2);
