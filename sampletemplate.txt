@@ -1,0 +1,13 @@
+Greetings,
+
+You had acquired product A 10 weeks ago and 85 people from your organization have leveraged it last week.
+
+Apple (ID# 1) has utilized 85% of its 100 available licenses. This utilization rate is more than the industry average.
+
+We have seen a surge based on the weekly active user base number. Would you like to obtain more licenses?
+We have seen a decline based on the weekly active user base number. Would you like to schedule an interview to improve the product usage?
+
+Product B also seems to be good fit for Apple. Would you like to schedule a call to know more about it?
+
+Regards,
+Your vendor.
